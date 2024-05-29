@@ -80,7 +80,24 @@ Este proyecto consiste en una página web de inicio de sesión de usuarios que p
 - Docker (para pruebas y despliegue)
 
 ### Instalación
+En tu ambiente de trabajo debes tener instalado docker, MySQL y Composer con las versiones anteriormente mencionadas.
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/ana-lala/Laravel_login.git
    cd Laravel_login
+   docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php82-composer:latest \
+    composer install --ignore-platform-reqs
+   ./vendor/bin/sail up -d
+2. En la terminal de Docker:
+      ```bash
+      composer require laravel/breeze --dev
+      php artisan breeze:install
+      php artisan migrate
+      npm install
+      npm run dev
+      npm run build
+
