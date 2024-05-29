@@ -71,11 +71,12 @@ Este proyecto consiste en una página web de inicio de sesión de usuarios que p
 - Los mensajes y notificaciones al usuario deben ser claros y útiles en todo el proceso.
 
 ## Instrucciones para Desarrolladores
+
 ### Requisitos Previos
-- PHP 7.4 o superior
-- Composer
-- MySQL
-- Node.js (para manejar frontend si es necesario)
+- PHP 8.0 o superior
+- Composer 2.x
+- MySQL 5.7 o superior
+- Node.js 14.x o superior (para manejar frontend si es necesario)
 - Docker (para pruebas y despliegue)
 
 ### Instalación
